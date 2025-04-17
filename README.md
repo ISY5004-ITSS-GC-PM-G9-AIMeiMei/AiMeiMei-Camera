@@ -3,7 +3,19 @@
 ![AI Guided Camera Screenshot](image.png)
 
 ## Introduction
-AI Guided Camera 
+AiMeiMei Camera is an AI-powered photo evaluation tool designed to help users take better pictures in real-time. This project combines state-of-the-art computer vision models and custom heuristics to analyze and provide feedback on individual image quality factors.
+
+The system evaluates each photo using:
+
+📐 YOLO for object detection and position scoring (to assess subject framing).
+
+🧠 SPAQ (Single-Image Photo Aesthetic Quality) deep model to evaluate image attributes like brightness, colorfulness, contrast, sharpness, and noise.
+
+🔄 OpenCV-based angle estimation to compute tilt and perspective distortion.
+
+📊 A scoring module that calculates individual sub-scores and a final composite score, offering real-time feedback and suggestions (e.g., "Move camera left", "Increase brightness", "Re-center subject").
+
+AiMeiMei is ideal for photography learners, tourism guide apps, or any system where visual quality matters. The tool is designed to run efficiently and provide both qualitative scores and actionable insights.
 
 ## Installation
 
